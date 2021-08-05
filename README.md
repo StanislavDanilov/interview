@@ -4,23 +4,28 @@
 
 ## Install pack
 
-```sh
+```bash
 source venv/bin/activate
 pip install -Ur requirements.txt
 ```
 
 ## Create db 
 
-```sh
+```python
 python3 setup.py
 ```
 
 
 ## Run server
 
-```sh
+```bash
 sudo ./runserver.sh
 ```
+[Основная страница] : http://127.0.0.1:8000/index 
+
+[Страница добавления] : http://127.0.0.1:8000/add
+
+[ Страница изменения изображения] : http://127.0.0.1:80-0/preview 
 
 ## Author
 
