@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление</title>
+</head>
+<body>
+    <a href="index">Назад к списку</a>
+    <h1> Новое изображение</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>Ссылка</p>
+            <input name="url_img">
+        <p>Файл</p>
+            <input name="myfile1" type="file">
+            <br>
+            <button type="submit">Отправить</button>
+    </form>
+    {% if error == 0 %}
+        <p>Error</p>
+    {% endif %}
+    </body>
+</html>

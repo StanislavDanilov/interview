@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя страница</title>
+</head>
+<body>
+    <a href="index">Назад к списку</a>
+    <h1>{{imgName}}</h1>
+    <form method="get">
+        <input name="fileName" hidden value="{{imgName}}">
+        <p>Высота</p>
+        <input name="height">
+        <p>Ширина</p>
+        <input name="width">
+        <button>Отправить</button>
+    </form>
+    <img src="../media/{{img}}">
+</body>
+</html>

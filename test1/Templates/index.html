@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя страница</title>
+</head>
+<body>
+    <h1> Список изображенний</h1>
+    {% if count == 0 %}
+        <p>Нет доступных изображений</p>
+    {% else %}
+        {% for img in images %}
+            <a href="preview?fileName={{img}}">{{img}}</a>
+            <br>
+        {% endfor %}
+    {% endif %}
+    <a href="add">Добавить изображение</a>
+</body>
+</html>
